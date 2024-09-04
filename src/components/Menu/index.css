@@ -1,0 +1,100 @@
+.menu-bg-container {
+    background: #27272F;
+    color: #828293; 
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 7px;
+    margin: 15px;
+    margin-top: 0px;
+    width: 300px; 
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+   
+   
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #27272F;
+    padding-top: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-image {
+    width: 100px;
+    width: 100px;   
+    margin-left: 30px;
+    color: white;
+
+}
+
+.left-icon {
+    margin-right: -20px;
+    background-color: #5A5A68;
+    padding: 8px;
+    border-radius: 20px;
+    color: white;
+    font-size: 23px;
+    
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -20px;
+
+}
+
+.menu-list-div {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-icons {
+    width: 30px;
+    height: 30px;
+}
+
+
+.menu-list-item {
+    margin-left: 15px;
+    font-size: 17px;
+    width: 150px;
+    text-align: left;
+}
+
+.menu-div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #017EFA;
+    border-right: none;
+    border-radius: 5px;
+    background: #222229;
+    color: #fff;
+
+}
+.menu-para {
+    background-color: #5A5A68;
+    color: #fff;
+    width: 200px;
+    margin-left: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0px;
+    text-align: left;
+    
+}
+.down-icon {
+    margin-left: 17px;
+    font-size: 21px;
+}
