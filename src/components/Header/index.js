@@ -1,6 +1,5 @@
 import './index.css'
 import { IoIosArrowDown } from "react-icons/io";
-import { FaQuestionCircle, FaRegQuestionCircle } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
 import { VscBellDot } from "react-icons/vsc";
 
@@ -26,7 +25,7 @@ const Header = () => {
                 </div>
                 <button className='header-button-1'><VscBellDot className='not-icon' /></button>
                 <div className='header-div'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYEmgMFztZlnQPUFPx0Ya7lka9nM7EIcfyA&s" className='prof-image'/>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYEmgMFztZlnQPUFPx0Ya7lka9nM7EIcfyA&s" alt="profile" className='prof-image'/>
                     <p className='header-para-1'>Leonardo C</p>
                     <IoIosArrowDown />
                 </div>

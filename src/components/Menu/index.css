@@ -3,15 +3,13 @@
     color: #828293; 
     font-size: 16px;
     font-weight: 500;
-    border-radius: 7px;
     margin: 15px;
-    margin-top: 0px;
+    border-radius: 9px;
     width: 300px; 
     display: flex;
     flex-direction: column;
     flex-basis: 23%;
-   
-   
+    
 }
 
 .image-container {
@@ -19,9 +17,9 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: #27272F;
-    padding-top: 20px;
+    padding-top: 30px;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .menu-image {
@@ -33,12 +31,12 @@
 }
 
 .left-icon {
-    margin-right: -20px;
+    margin-right: -15px;
     background-color: #5A5A68;
-    padding: 8px;
+    padding: 6px;
     border-radius: 20px;
     color: white;
-    font-size: 23px;
+    font-size: 21px;
     
 }
 
@@ -47,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: -20px;
+    margin-left: -25px;
 
 }
 
