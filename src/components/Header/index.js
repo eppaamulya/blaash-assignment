@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
                 <button className='header-button-1'><VscBellDot className='not-icon' /></button>
                 <div className='header-div'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhYEmgMFztZlnQPUFPx0Ya7lka9nM7EIcfyA&s" alt="profile" className='prof-image'/>
+                    <img src="https://img.freepik.com/premium-photo/anime-boy-aesthetic-image-wallpaper_590614-6490.jpg" alt="profile" className='prof-image'/>
                     <p className='header-para-1'>Leonardo C</p>
                     <IoIosArrowDown />
                 </div>

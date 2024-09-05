@@ -24,7 +24,7 @@ const Slider = ({feedlist, closeSlider}) => {
             <img src={feed.thumbnailUrl} className='slider-image' alt="Thumbnail Url" />  
             <div className='slider-cont'>
               <p className='slider-name'>{feed.thumbnailTitle}</p> 
-              <p className='slider-time'>{feed.videoDuration}:00</p>
+              <p className='slider-time'>{feed.videoDuration} : 00</p>
             </div>
             <div className='check'>
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

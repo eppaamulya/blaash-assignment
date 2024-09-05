@@ -19,16 +19,20 @@
 }
 
 .playlist-item {
-    margin: 15px;
+    margin: 18px;  
     background-color: #1B1B22;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
+    cursor: pointer;
+    width: 210px;
 
 }
 
 .cover-image {
-    width: 220px;
-    height: 170px;
+    margin-top: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
     
 }
 
@@ -42,6 +46,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: #FFFFFFCC;
+    font-weight: 500;
+
 }
 
 .play-icon {
@@ -58,9 +65,11 @@
 
 .dot-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #1B1B22;
-    padding: 8px;
-    border-radius: 7px;
+    top: 0px;
+    right: 0px;
+    background-color:  #484851;
+    font-size: 20px;
+    padding: 9px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
 }

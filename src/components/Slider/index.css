@@ -18,6 +18,7 @@
   background: #1B1B22;
   border: 1px solid #484851;
   border-radius: 10px;
+  cursor: pointer;
 
 }
 
@@ -54,8 +55,8 @@
 
 .feed-para-3 {
   font-size: 17px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   margin-left: 20px;
 }
 
