@@ -12,7 +12,8 @@ class App extends Component {
     playList: [],
     feedlist: [],
     filteredFeedlist: [],
-    isSliderOpen: false
+    isSliderOpen: false,
+    isMenuCollapsed: true 
   };
 
   componentDidMount() {
@@ -88,23 +89,27 @@ class App extends Component {
     const { feedlist } = this.state;
     const filteredFeedlist = feedlist.filter(post => postIds.includes(post.engagementPostId));
 
-    this.setState({ filteredFeedlist });
-    this.setState(prevState => ({
-      isSliderOpen: !prevState.isSliderOpen,
-    }));
+    this.setState({ filteredFeedlist , isSliderOpen : true })
   };
 
   closeSlider = () => {
     this.setState({isSliderOpen: false})
   }
 
+  toggleMenu = () => {
+    this.setState(prevState => ({
+      isMenuCollapsed: !prevState.isMenuCollapsed
+    }));
+  }
+
+
   render() {
-    const { playList, filteredFeedlist, isSliderOpen } = this.state;
+    const { playList, filteredFeedlist, isSliderOpen , isMenuCollapsed} = this.state;
 
     return (
       <div className='App'>
-        <Menu />
-        <div className='App-2'>
+        <Menu isCollapsed={isMenuCollapsed} toggleMenu={this.toggleMenu} />
+        <div className={`App-2 ${isMenuCollapsed ? '' : 'collapsed'}`}>
           <Header />
           <div className='div-container'>
             <h1 className='heading'>Product Playlists</h1>

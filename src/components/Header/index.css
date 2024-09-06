@@ -4,7 +4,7 @@
     background: #27272F;
     color: #fff;
     margin: 15px;
-    border-radius: 7px;
+    border-radius: 15px;
     
 }
 
@@ -85,7 +85,7 @@
 
 .not-icon {
     font-size: 20px;
-    color: #a7a7ab;
+    color: #dddde2;
 }
 
 .header-div {

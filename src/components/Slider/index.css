@@ -4,7 +4,7 @@
   background: #27272F;
   color: #fff;
   flex-basis: 70%;
-  border-radius: 7px;
+  border-radius: 15px;
   margin-left: 15px;
   margin-top: 10px;
   flex-basis: 35%;
@@ -12,8 +12,8 @@
 }
 
 .close-button {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-left: auto;
   background: #1B1B22;
   border: 1px solid #484851;
@@ -23,13 +23,13 @@
 }
 
 .close-icon {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   
 }
 
 .feed-para-1 {
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   margin-left: 20px;
   font-weight: 500;
@@ -41,6 +41,8 @@
   border: 1px solid #484851;
   margin: 5px 20px;
   padding: 10px;
+  margin-top: -7px;
+  margin-bottom: 0px;
   border-radius: 7px;
   text-align: left;
   
@@ -50,7 +52,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 15px;
+  margin-top: -5px;
 }
 
 .feed-para-3 {
@@ -66,7 +68,7 @@
 }
 
 .feed-para-5 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   text-align: left;
   margin-left: 20px;
@@ -79,7 +81,7 @@
   list-style-type: none;
   margin-left: -30px;
   margin-top: 0px;
-  height: 40vh;
+  height: 35vh;
   overflow-y: auto;
 }
 
@@ -92,7 +94,9 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  border-radius: 9px;
+  border-radius: 11px;
+  margin-top: 0px;
+
 }
 
 
@@ -105,27 +109,35 @@
 }
 
 .slider-image {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 10px;
   margin-left: 20px;
 
 }
 
 .slider-name {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+
+}
+
+.slider-name-2 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0px;
 
 }
 
 .slider-time {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   margin-top: 5px;
   margin-left: 0px;
+  margin-bottom: 5px;
   background-color: #27272F;
-  padding: 5px 10px;
+  padding: 1px 11px;
   border-radius: 10px;
 
 }
@@ -148,7 +160,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   background: #017EFA;
   border: none;

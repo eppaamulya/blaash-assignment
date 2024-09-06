@@ -3,8 +3,8 @@
     flex-direction: column;
     background: #27272F;
     color: #fff;
-    flex-basis: 70%;
-    border-radius: 7px;
+    flex-basis: 75%;
+    border-radius: 15px;
     margin-left: 15px;
     margin-top: 10px;
 }
@@ -13,53 +13,82 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: -20px
 }
 
 .playlist-item {
-    margin: 18px;  
+    margin: 10px;  
     background-color: #1B1B22;
     border-radius: 20px;
     position: relative;
-    cursor: pointer;
-    width: 210px;
-
+    cursor: pointer;          
+            
 }
 
 .cover-image {
     margin-top: 15px;
-    width: 120px;
+    width: 200px;
     height: 120px;
     border-radius: 10px;
     
 }
 
-.playlist-name {
-    font-size: 19px;
-    margin-top: 8px;
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 90px;
+    
+    
 }
 
 .playlist-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.playlist-name {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+
+.blue {
+    width: 21px;
+    height: 26px;  
+
+}
+
+.playlist-content-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #FFFFFFCC;
     font-weight: 500;
-
+    height: 40px;
+    background: #1C1C23;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
 }
 
-.play-icon {
-    margin-top: -15px;
+.play-icon {  
     font-size: 20px;
 }
 
 
 .playlist-length {
-    font-size: 17px;
-    margin-top: 5px;
+    font-size: 17px;   
     margin-left: 15px;
 }
 
@@ -67,9 +96,9 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color:  #484851;
-    font-size: 20px;
-    padding: 9px;
-    border-top-right-radius: 9px;
-    border-bottom-left-radius: 9px;
+    background-color: #484851;
+    font-size: 22px;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }

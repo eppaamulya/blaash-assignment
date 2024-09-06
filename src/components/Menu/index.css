@@ -1,16 +1,54 @@
 .menu-bg-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
     background: #27272F;
     color: #828293; 
     font-size: 16px;
     font-weight: 500;
     margin: 15px;
-    border-radius: 9px;
-    width: 300px; 
-    display: flex;
-    flex-direction: column;
-    flex-basis: 23%;
+    width: 270px;
+    border-radius: 15px;
+    position: relative;
+    transition: width 0.3s ease;
+    transform: translateX(0);
+  
     
 }
+
+.menu-bg-container.hidden {
+    transition: transform 0.3s ease;
+    transform: translateX(0%);
+}
+
+.left-button {
+    position: absolute;
+    top: 20px;
+    right: -21px;
+    width: 50px;
+    height: 50px;
+    background: #27272F;
+    border-radius: 30px;
+    border: none;
+}
+
+.left-icon {
+    background-color: #5A5A68;
+    padding: 6px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    
+}
+
+
+.show-button-only {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1; 
+}
+
 
 .image-container {
     display: flex;
@@ -28,16 +66,6 @@
     margin-left: 30px;
     color: white;
 
-}
-
-.left-icon {
-    margin-right: -15px;
-    background-color: #5A5A68;
-    padding: 6px;
-    border-radius: 20px;
-    color: white;
-    font-size: 21px;
-    
 }
 
 .menu-list {
@@ -59,14 +87,14 @@
 }
 
 .menu-icons {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 
 .menu-list-item {
     margin-left: 15px;
-    font-size: 17px;
+    font-size: 15px;
     width: 150px;
     text-align: left;
 }
@@ -81,6 +109,7 @@
     color: #fff;
 
 }
+
 .menu-para {
     background-color: #5A5A68;
     color: #fff;
@@ -92,7 +121,14 @@
     text-align: left;
     
 }
+
 .down-icon {
     margin-left: 17px;
     font-size: 21px;
+} 
+
+.menu-bg-container.hidden {
+    background-color: transparent;
+    width: auto;
 }
+  

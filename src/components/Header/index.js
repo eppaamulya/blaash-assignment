@@ -2,7 +2,7 @@ import './index.css'
 import { IoIosArrowDown } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { VscBellDot } from "react-icons/vsc";
-
+import contact from '../../assets/contact_support.png'
 
 const Header = () => {
     return (
@@ -11,8 +11,7 @@ const Header = () => {
                 <p className='header-para'>Design Studio</p>
                 <div className='header-container-2'>
                 <button className='header-button'>
-                    <svg className='header-icon' width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.28467 17.9637V16.6331C8.28467 15.957 7.76005 15.4433 7.14488 15.3743C3.5702 14.9732 0.784668 11.9282 0.784668 8.25004C0.784668 4.29759 3.99888 1.08337 7.95133 1.08337C11.9038 1.08337 15.118 4.29759 15.118 8.25004C15.118 12.0372 12.4644 15.9511 8.40097 17.9076L8.4004 17.9079L8.28467 17.9637Z" stroke="#017EFA" stroke-width="1.5"/>
-                    </svg>              
+                    <img src={contact} className='header-icon' alt="Support Request" />              
                     Support Request
                 </button>
                 <button className='header-button'>

@@ -1,16 +1,15 @@
 import './index.css';
 import { BsCollectionPlayFill } from "react-icons/bs";
-import { BsThreeDots } from "react-icons/bs";
+import { PiDotsThreeOutline } from "react-icons/pi";
 
-
+import blue from '../../assets/image 48.png'
 const images = {
-  100170 : "https://d33zkbf3uttm0b.cloudfront.net/i/Copy+of+why+tyke.png",
-  100230 : "https://d33zkbf3uttm0b.cloudfront.net/i/ASDFS/5473e4a5-6312-46bf-8446-7b655eb9e587.png",
-  100246 : "https://d33zkbf3uttm0b.cloudfront.net/i/ASDFS/7c36a2a6-ee48-4673-9465-4fd7133d9499.png",
-  100240 : "https://d33zkbf3uttm0b.cloudfront.net/i/ASDFS/518b1571-975f-4b0c-86bb-64eee2651e87.png",
-  100281 : "https://d33zkbf3uttm0b.cloudfront.net/i/ASDFS/15f34203-da25-4190-a546-9a7df168ad57.png",
-  100352 : "https://d33zkbf3uttm0b.cloudfront.net/i/TYKE/1t.png",
-  
+  100170 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629714/sorqwnqz6zjl9t9lny92.png',
+  100230 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629742/n4y1jutcny8oci1dzas7.png',
+  100246 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629795/ax3wqyq0y3qfk6mpacrv.png',
+  100240 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629865/dlglr9ani2jyasexiuku.png',
+  100281 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629742/n4y1jutcny8oci1dzas7.png',
+  100352 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629496/ng6vhyzoyvn4kpyunauh.png',
 }
   
 const Playlist = ({ playList, onPlaylistClick }) => {   
@@ -18,15 +17,19 @@ const Playlist = ({ playList, onPlaylistClick }) => {
     <div className='playlist-bg-container'>
       <ul className='playlist-container'>
         {playList.map(play => (    
-          <li key={play.id} onClick={() => onPlaylistClick(play.postIds)} className='playlist-item'>
-            <img src={images[play.id]}  alt={play.name} className="cover-image"/>
-            <h1 className='playlist-name'>{play.name}</h1>
-            <div className='playlist-content'>
-              <BsCollectionPlayFill className='play-icon' />
-              <p className='playlist-length'>{play.postIds.length} {play.postIds.length === 1 ? 'Video': 'Videos'}</p>
+          <li key={play.id} onClick={() => onPlaylistClick(play.postIds)} className='playlist-item' style={{width: '240px', height: '180px', backgroundImage: `url(${images[play.id]})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+            <div className='details-container'>
+              <div className='playlist-content'>
+                <img src={blue} className='blue' alt="Blue" />
+                <h1 className='playlist-name'>{play.name}</h1>
+              </div> 
+              <div className='playlist-content-1'>
+                <BsCollectionPlayFill className='play-icon' />
+                <p className='playlist-length'>{play.postIds.length} {play.postIds.length === 1 ? 'Video': 'Videos'}</p>
+              </div>
             </div>
-            <BsThreeDots className='dot-icon' />   
-        </li>
+            <PiDotsThreeOutline className='dot-icon' />   
+          </li>
         ))}
       </ul>
     </div>
