@@ -1,8 +1,9 @@
 import './index.css';
+import blue from '../../assets/image 48.png'
+
 import { BsCollectionPlayFill } from "react-icons/bs";
 import { PiDotsThreeOutline } from "react-icons/pi";
 
-import blue from '../../assets/image 48.png'
 const images = {
   100170 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629714/sorqwnqz6zjl9t9lny92.png',
   100230 : 'https://res.cloudinary.com/dq9pyd1fh/image/upload/v1725629742/n4y1jutcny8oci1dzas7.png',
@@ -17,7 +18,7 @@ const Playlist = ({ playList, onPlaylistClick }) => {
     <div className='playlist-bg-container'>
       <ul className='playlist-container'>
         {playList.map(play => (    
-          <li key={play.id} onClick={() => onPlaylistClick(play.postIds)} className='playlist-item' style={{width: '240px', height: '180px', backgroundImage: `url(${images[play.id]})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+          <li key={play.id} onClick={() => onPlaylistClick(play.postIds)} className='playlist-item' style={{ backgroundImage: `url(${images[play.id]})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
             <div className='details-container'>
               <div className='playlist-content'>
                 <img src={blue} className='blue' alt="Blue" />

@@ -1,8 +1,9 @@
 import './index.css'
+import contact from '../../assets/contact_support.png'
+
 import { IoIosArrowDown } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import { VscBellDot } from "react-icons/vsc";
-import contact from '../../assets/contact_support.png'
 
 const Header = () => {
     return (

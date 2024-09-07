@@ -1,11 +1,12 @@
 import './App.css';
+import { Component } from 'react';
+
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Playlist from './components/Playlist';
 import Slider from './components/Slider';
-
 import { MdOutlineLink } from "react-icons/md";
-import { Component } from 'react';
+
 
 class App extends Component {
   state = {

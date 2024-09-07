@@ -11,8 +11,7 @@
     border-radius: 15px;
     position: relative;
     transition: width 0.3s ease;
-    transform: translateX(0);
-  
+    transform: translateX(0);  
     
 }
 
@@ -132,3 +131,16 @@
     width: auto;
 }
   
+
+@media screen and (max-width: 1023px) {
+    .menu-bg-container {
+      transform: translateX(0%);
+    }
+  
+    .menu-bg-container.hidden {
+      transform: translateX(0);
+      position: absolute;
+      z-index: 1000;
+    } 
+    
+}

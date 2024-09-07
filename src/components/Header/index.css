@@ -95,7 +95,6 @@
     margin-right: 20px;
 }
 
-
 .prof-image {
     width: 40px;
     height: 40px;
@@ -109,4 +108,36 @@
     text-align: left;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .header-button {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .header-search {
+        display: none;
+    }
+      
+}
+
+@media screen and (max-width: 767px){
+   .header-search {
+        display: none;
+   }
+
+   .header-button-1 {
+        display: none;
+   }
+    
+}
+
+@media screen and (max-width: 424px){
+    .header-div {
+        display: none;
+    }
+     
 }

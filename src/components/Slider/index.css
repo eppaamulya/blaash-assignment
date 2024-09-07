@@ -178,3 +178,45 @@
   margin-right: 10px;
   font-weight: 600;
 }
+
+@media screen and (max-width: 1024px) {
+  .slider-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
+
+  .slider-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .slider-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 10px;
+  
+  }
+
+  .slider-time {
+    text-align: center;
+  
+  }
+
+  .down-btn {
+    font-size: 15px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+  
+  }
+  
+}

@@ -23,7 +23,9 @@
     background-color: #1B1B22;
     border-radius: 20px;
     position: relative;
-    cursor: pointer;          
+    cursor: pointer; 
+    width: 240px;
+    height: 180px;     
             
 }
 
@@ -101,4 +103,15 @@
     padding: 10px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+
+@media screen and (max-width: 1023px) {
+
+    .playlist-item { 
+        position: relative;
+        cursor: pointer; 
+        width: 170px;
+        height: 200px;     
+                
+    }
 }

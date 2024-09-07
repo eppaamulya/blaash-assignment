@@ -35,7 +35,10 @@ const Slider = ({feedlist, closeSlider}) => {
           </li>
         ))}
       </ul>
-      <div className='down-btn'><IoSyncSharp className='sync-icon' />Update Playlist</div>
+      <div className='down-btn'>
+        <IoSyncSharp className='sync-icon' />
+        Update Playlist
+      </div>
     </div>
   )
 }
